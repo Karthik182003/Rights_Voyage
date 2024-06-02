@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" href="../Images/Rectangle (1).png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/137076d6dc.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Images/WhatsApp_Image_2023-09-22_at_9.00.28_PM-removebg-preview.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <!-- HEADER -->
+            <div class="header">
+                <div class="heading" style="width: 1500px;">
+                    <h1 style="font-size: 80px;">Ready? Get! Set! Go!</h1>
+                    <p style="font-size: 30px; width: 100%;">Register to start an all-new learning experience</p>
+                </div>
+
+                <img src="../Images/books.png" alt="">
+            </div>
+
+            <!-- FORM -->
+            <form id="registration-form">
+
+                <!-- USER INPUTS -->
+                <div class="type">
+                    <div class="inputs">
+                            <label for="first" class="label">First Name<sup style="color: red;">*</sup>:&nbsp&nbsp</label>
+                            <input type="text" id="first" class="input" placeholder="Enter First Name" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="last" class="label">Last Name:&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" id="last" class="input" placeholder="Enter Last Name" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="gender" class="label">Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <select name="" id="gender" class="input">
+                            <option value="" selected disabled>--Select Gender--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="email" class="label">Email Id<sup
+                                style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="email" id="email" class="input" placeholder="Enter Email ID" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="mobile" class="label">Mobile No<sup
+                                style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="tel" id="mobile" class="input" placeholder="Enter Mobile No." required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="user" class="label">Username<sup
+                                style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" id="user" class="input" placeholder="Enter Username" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="pass" class="label">Password<sup
+                                style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="password" id="pass" class="input" placeholder="Enter password" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="confirm" class="label">Confirm<sup
+                                style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="password" id="confirm" class="input" placeholder="Re-enter passowrd" required>
+                    </div>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="buttons">
+                    <button value="Register" id="Register" type="submit">REGISTER</button>
+                    <a id="anchor" href="../login/login-page.html">Already a member?</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="foot_content">
+                <div class="footer-element">
+                    <h2>RIGHTS VOYAGE</h2>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+                <div class="footer-element">
+                    <h2>EMAIL</h2>
+                    <div class="id">
+                        <a href="#">bennurivarsha@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="footer-element">
+                    <h2>MENU</h2>
+                    <div class="menu_contents">
+                        <a href="#">ABOUT US</a>
+                        <a href="#">COURSES</a>
+                        <a href="#">CONTACTS</a>
+                    </div>
+                </div>
+                <div class="footer-element">
+                    <h2>SERVICES</h2>
+                    <div class="footer-element">
+                        <a href="#">TERMS OF USE</a>
+                        <a href="#">REFUND & CANCELLATION</a>
+                    </div>
+                </div>
+
+                <div class="footer-element">
+                    <h2 class="social-head">OUR SOCIALS</h2>
+                    <div class="social_img">
+                        <a href="https://www.linkedin.com/in/varsha-bennuri-05a93b2b9"><i class="fa-brands fa-linkedin fa-2x icon"></i></a>
+                        <a href="https://github.com/VarshaBennuri"><i class="fa-brands fa-github fa-2x icon"></i></a>
+                        <a href="https://www.instagram.com/varsha_bennuri?igsh=aG9qZTE4bTZ1bTBh&utm_source=qr"><i class="fa-brands fa-instagram fa-2x icon"></i></a>
+                        <a href="mailto:bennurivarsha@.com"><i class="fa-regular fa-envelope fa-2x icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- toast message -->
+    <div id="message" class="message"></div>
+    <script src="register.js"></script>
+
+</html>

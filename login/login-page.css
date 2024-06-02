@@ -1,0 +1,432 @@
+  /* login page css */
+
+@font-face {
+  font-family: Outfit;
+  src: url(../Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../Roboto-Medium.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* selection style */
+
+*::selection {
+  background-color: gold;
+  color: white;
+}
+
+.container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.login-page {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* header style */
+
+.header {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 40%;
+  z-index: 2;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.heading h1 {
+  font-family: Outfit;
+  font-size: 50px;
+  width: 65%;
+  line-height: 80px;
+  color: white;
+  z-index: 2;
+}
+
+.heading p {
+  font-family: Roboto;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+  width: 55%;
+  z-index: 2;
+}
+
+/* login and forgot password button style */
+
+.buttons {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.buttons button {
+  background-color: #C7E7F8;
+  border: 1px solid #C7E7F8;
+  border-radius: 83px;
+  height: 45px;
+  width: 133px;
+  bottom: 0;
+  margin-right: 35px;
+  font-weight: bold;
+  font-size: 16px;
+  word-spacing: 10%;
+  font-family: Outfit;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.buttons a {
+  font-size: 25px;
+  text-decoration: underline;
+  font-style: Outfit;
+  color: black;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.not-a-member-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 2;
+  font-weight: bold;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* hover effects */
+
+#loginButton:hover {
+  scale: 1.15;
+  background-color: #b3dff7;
+}
+
+#anchor:hover {
+  scale: 1.1;
+}
+
+#new_member:hover {
+  scale: 1.1;
+}
+
+/* form style */
+
+.type {
+  margin-top: 8%;
+  position: relative;
+  right: 300px;
+}
+
+.inputs {
+  position: relative;
+  left: 40%;
+  padding-bottom: 15px;
+  display: flex;
+  z-index: 2;
+}
+
+.inputs .input,
+.inputs select {
+  border-radius: 20px;
+  border: 1px solid white;
+  height: 35px;
+  width: 600px;
+  z-index: 2;
+  left: 20px;
+  padding-left: 10px;
+}
+
+.inputs .label {
+  font-family: Outfit;
+  font-size: 25px;
+  z-index: 2;
+}
+
+/* footer style */
+
+
+.foot_content {
+  padding: 30px 0 50px 0;
+  overflow-x: hidden;
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 850px;
+  border: none;
+}
+
+.Rights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serv_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social_img {
+  display: flex;
+  gap: 20px;
+}
+
+.social_img a {
+  height: 30px;
+  width: 30px;
+}
+
+.foot_content a:hover {
+  color: #F4BB44;
+  transition: color 0.3s linear;
+}
+
+.foot_content h2 {
+  font-weight: bold;
+  font-size: 16px;
+  word-spacing: 10%;
+  font-family: Outfit;
+}
+
+.foot_content a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.foot_content p {
+  color: black;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.Rights a {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* toast style */
+.message {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+  z-index: 5;
+}
+
+.success {
+  background-color: #4caf50;
+}
+
+.success:hover {
+  background-color: #318534;
+}
+
+.error {
+  background-color: #f44336;
+}
+
+.error:hover {
+  background-color: #882d27;
+}
+
+.info {
+  background-color: #0074cc;
+}
+
+.info:hover {
+  background-color: #005baa;
+}
+
+h1 {
+  font-size: 200px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* media query for ipad air */
+
+@media (min-width: 769px) and (max-width:1260px) {
+  .login-page {
+    margin-top: 20%;
+    margin-left: 8%;
+    width: 80%;
+  }
+
+  .header {
+    margin-top: 5%;
+    justify-content: center;
+
+  }
+
+  .header img {
+    width: 60%;
+    height: 40%;
+  }
+
+  .heading h1 {
+    font-size: 40px;
+    width: 75%;
+    line-height: 60px;
+  }
+
+  .heading p {
+    font-size: 16px;
+    width: 65%;
+    line-height: 22px;
+  }
+
+  .type {
+    right: 140px;
+  }
+
+  .inputs .input,
+  .inputs select {
+    width: 50%;
+  }
+
+  .buttons {
+    margin-top: 3%;
+  }
+
+  .buttons button {
+    margin-right: 25px;
+  }
+
+  .foot_content {
+    margin-top: 5%;
+  }
+}
+
+
+/* Media query for iPhone 12 Pro */
+@media (max-width: 768px) {
+
+  .login-page {
+    margin-top: 20%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .header {
+    margin-top: 3%;
+    justify-content: center;
+    margin-left: 20%;
+  }
+
+  .header img {
+    opacity: 0;
+  }
+
+
+  .heading h1 {
+    font-size: 10px;
+    width: 100%;
+    line-height: 50px;
+    left: 100px;
+    text-align: left;
+    text-wrap: stable;
+    word-spacing: 20px;
+    margin-top: 30px;
+  }
+
+  .heading p {
+    font-size: 7px;
+    width: 75%;
+    line-height: 20px;
+  }
+
+  .type {
+    right: 140px;
+  }
+
+  .inputs .input,
+  .inputs select {
+    width: 40%;
+  }
+
+  .buttons {
+    margin-top: 2%;
+  }
+
+  .buttons button {
+    margin-right: 20px;
+  }
+
+  .foot_content {
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

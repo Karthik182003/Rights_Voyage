@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Login-Page</title>
+  <link rel="stylesheet" href="../levels/global.css" />
+  <link rel="stylesheet" href="../login/login-page.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap" />
+  <script src="https://kit.fontawesome.com/137076d6dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-page">
+
+      <!-- header -->
+
+      <div class="header">
+        <!-- header text -->
+        <div class="heading" style="width: 1500px;">
+          <h1 style="font-size: 80px;">Already a member?</h1>
+          <p style="font-size: 30px; width: 100%;">Log In to continue your journey!</p>
+        </div>
+        <!-- header image -->
+        <img src="../Images/books.png" alt="">
+      </div>
+
+      <!-- Login Form -->
+
+      <form id="loginForm" action="http://localhost:3000/api/login" method="POST">
+        
+        <!-- user-id and password -->
+        <div class="type">
+          <div class="inputs">
+            <label for="user" class="label">Username<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="user" class="input" placeholder="Enter Username" required>
+          </div>
+
+          <div class="inputs">
+            <label for="pass" class="label">Password<sup style="color: red;">*</sup>:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="password" id="pass" class="input" placeholder="Enter Password" required>
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="buttons">
+          <button value="Login" id="loginButton" type="submit">Login</button>
+          <a id="anchor" href="../forgot/forgot-password.html">Forgot your password?</a>
+        </div>
+
+      </form>
+    </div>
+
+    <a href="../register/register.html" class="not-a-member-button" id="new_member">Not a member? Register here</a>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot_content">
+          <div class="footer-element">
+              <h2>RIGHTS VOYAGE</h2>
+              <a href="#">Privacy Policy</a>
+          </div>
+
+          <div class="footer-element">
+              <h2>EMAIL</h2>
+              <div class="id">
+                  <a href="#">bennurivarsha@gmail.com</a>
+              </div>
+          </div>
+
+          <div class="footer-element">
+              <h2>MENU</h2>
+              <div class="menu_contents">
+                  <a href="#">ABOUT US</a>
+                  <a href="#">COURSES</a>
+                  <a href="#">CONTACTS</a>
+              </div>
+          </div>
+          <div class="footer-element">
+              <h2>SERVICES</h2>
+              <div class="footer-element">
+                  <a href="#">TERMS OF USE</a>
+                  <a href="#">REFUND & CANCELLATION</a>
+              </div>
+          </div>
+
+          <div class="footer-element">
+              <h2 class="social-head">OUR SOCIALS</h2>
+              <div class="social_img">
+                  <a href="https://www.linkedin.com/in/varsha-bennuri-05a93b2b9"><i class="fa-brands fa-linkedin fa-2x icon"></i></a>
+                  <a href="https://github.com/VarshaBennuri"><i class="fa-brands fa-github fa-2x icon"></i></a>
+                  <a href="https://www.instagram.com/varsha_bennuri?igsh=aG9qZTE4bTZ1bTBh&utm_source=qr"><i class="fa-brands fa-instagram fa-2x icon"></i></a>
+                  <a href="mailto:bennurivarsha@.com"><i class="fa-regular fa-envelope fa-2x icon"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  </div>
+
+  <script src="login-page.js"></script>
+  <div id="message" class="message"></div>
+  
+</body>
+</html>
